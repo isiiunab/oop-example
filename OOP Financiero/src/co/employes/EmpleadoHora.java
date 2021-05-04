@@ -5,6 +5,12 @@ public class EmpleadoHora extends Empleado {
 	private double valorHora;
 	private double totalPagar;
 	
+	
+	public EmpleadoHora(Empleado empleado, int horasTrabajadas, double valorHora) {
+		super(empleado.getNombre(),empleado.getApellido(), empleado.getArea());
+		this.horasTrabajadas = horasTrabajadas;
+		this.valorHora = valorHora;
+	}
 	public EmpleadoHora(String nombre, String apellido, String area, int horasTrabajadas, double valorHora) {
 		super(nombre, apellido, area);
 		this.horasTrabajadas= horasTrabajadas;

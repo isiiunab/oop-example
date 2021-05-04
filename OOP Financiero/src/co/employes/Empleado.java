@@ -1,10 +1,12 @@
 package co.employes;
 
-public abstract class Empleado {
+public class Empleado {
 	private String nombre;
 	private String apellido;
 	private String area;
 	
+	
+		
 	public Empleado() {
 		
 	}
@@ -27,6 +29,25 @@ public abstract class Empleado {
 	public String toString() {
 		return "El empleado: " + this.nombre + " " + this.apellido
 				+ " trabaja en el área de: "+ this.area;
+	}
+	
+	public String getNombre() {
+		return nombre;
+	}
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+	public String getApellido() {
+		return apellido;
+	}
+	public void setApellido(String apellido) {
+		this.apellido = apellido;
+	}
+	public String getArea() {
+		return area;
+	}
+	public void setArea(String area) {
+		this.area = area;
 	}
 
 }
