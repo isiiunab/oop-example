@@ -14,7 +14,7 @@ public class Monedero {
 	public boolean agregarDinero(double dinero) {
 		if (dinero > 0) {
 			this.dinero += dinero;
-			this.movimientos.registroMovimiento("[AGREGAR DINERO] se agregó: "+ dinero);
+			this.movimientos.registroMovimiento("[AGREGAR DINERO] se agregó: "+ dinero);			
 			return true;			
 		} else {
 			return false;
