@@ -11,6 +11,15 @@ public class EmpleadoHora extends Empleado {
 		this.prestacion = prestacion;
 	}	
 	
+	
+	@Override
+	public double obtenerMontoPagado() {
+		return this.calcularSueldo();
+	}
+	@Override 
+	public String display() {
+		return this.mostrarInfo();
+	}
 	@Override
 	public String mostrarInfo() {
 		return super.mostrarInfo()

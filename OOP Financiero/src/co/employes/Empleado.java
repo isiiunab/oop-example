@@ -1,6 +1,6 @@
 package co.employes;
 
-public class Empleado {
+public class Empleado implements PorPagar{
 	private String nombre;
 	private String apellido;
 	private String area;
@@ -29,6 +29,16 @@ public class Empleado {
 	public String toString() {
 		return "El empleado: " + this.nombre + " " + this.apellido
 				+ " trabaja en el área de: "+ this.area;
+	}
+	
+	@Override
+	public double obtenerMontoPagado() {
+		return this.calcularSueldo();
+	}
+	
+	@Override
+	public String display() {
+		return this.toString();
 	}
 	
 	public String getNombre() {
